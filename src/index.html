@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
+    <form id="contactForm" action="process_form.php" method="POST">
+        <input type="text" name="name" placeholder="Seu nome" required><br><br>
+        <input type="email" name="email" placeholder="Seu e-mail" required><br><br>
+        <input type="text" name="subject" placeholder="Assunto" required><br><br>
+        <textarea name="message" placeholder="Sua mensagem" required></textarea><br><br>
+        
+        <!-- Campo Honeypot -->
+        <input type="text" name="honeypot" class="honeypot-field">
     
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
